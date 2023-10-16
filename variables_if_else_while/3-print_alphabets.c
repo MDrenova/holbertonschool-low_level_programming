@@ -6,14 +6,15 @@
  */
 int main(void)
 {
-        char ch = 'a';
+	char ch = 'a';
 	char capital = 'A';
-	while(ch <= 'z')
+
+	while (ch <= 'z')
 	{
 		putchar(ch);
 		ch++;
 	}
-	while(capital <= 'Z')
+	while (capital <= 'Z')
 	{
 		putchar(capital);
 		capital++;
