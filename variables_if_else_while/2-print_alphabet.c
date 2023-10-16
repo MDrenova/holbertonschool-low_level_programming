@@ -7,9 +7,7 @@
 int main(void)
 {
         char ch = 'a';
-
-    	// Write the Character to stdout
-    	for (ch = 'a'; ch <= 'z'; ch++)
-		    putchar(ch);putchar('\n');
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar(ch);putchar('\n');
         return (0);
 }
