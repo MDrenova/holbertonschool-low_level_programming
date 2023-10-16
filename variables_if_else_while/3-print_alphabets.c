@@ -7,12 +7,12 @@
 int main(void)
 {
         char ch = 'a';
+	char capital = 'A'
 	while(ch <= 'z')
 	{
 		putchar(ch);
 		ch++;
 	}
-	char capital = 'A';
 	while(capital <= 'Z')
 	{
 		putchar(capital);
