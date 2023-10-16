@@ -12,11 +12,11 @@ int main(void)
 		putchar(ch);
 		ch++;
 	}
-	char CH = 'A';
-	while(CH <= 'Z')
+	char capital = 'A';
+	while(capital <= 'Z')
 	{
-		putchar(CH);
-		CH++;
+		putchar(capital);
+		capital++;
 	}
 	putchar('\n');
 	return (0);
