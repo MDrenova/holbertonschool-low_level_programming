@@ -3,6 +3,9 @@
  * main - Entry point
  * Print numbers base 16
  * Return: Always 0 (Success)
+ * Or with not condition
+ * if (num !=9){......}
+ *
  */
 int main(void)
 {
