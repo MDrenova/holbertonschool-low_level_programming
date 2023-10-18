@@ -1,7 +1,6 @@
 #include "main.h"
 /**
  * times_table - Entry point
- * @n: is parameter
  * return abs(n);
  * Return:0
  */
