@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_numbers_numbers - function that multiplies two integers
+ * print_most_numbers - function print except 2,4
  * main.h header file
  * Return:0
  */
