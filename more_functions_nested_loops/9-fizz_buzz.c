@@ -19,6 +19,8 @@ int main(void)
 			printf("%s ", fizz);
 		else if (i % 5 == 0)
 			printf("%s ", buzz);
+		else if (i == 100)
+			printf("%d", i);
 		else
 			printf("%d ", i);
 	}
