@@ -5,24 +5,24 @@
  * @src: source of what will be cut
  * Return: destination
  */
-char _strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
-	int len, len_src, j, i;
+	int len, i;
 	
 	len = 0;
-	len_src = 0;
-	j = 0;
+	i = 0;
 
 	while (dest[len] != '\0')
 		len++;
-	while (src[len_src] != '\0')
-		len_src++;
-	for (i = len_src; i < len; i++)
+	
+	while (src[i] != '\0')
 	{
-		src[len_src] = dest[j];
-		j++;
-	}
-	dest[i] = '\0';
+		dest[len] = src[i];
 
-	return (*dest);
+		len++;
+		i++;
+	}
+	dest[len] = '\0';
+
+	return (dest);
 }
