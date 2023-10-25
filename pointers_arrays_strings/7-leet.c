@@ -17,7 +17,6 @@ char *leet(char *str)
 		{
 			if (str[i] == lett[j])
 				str[i] = num[j];
-				break;
 		}
 	}
 
