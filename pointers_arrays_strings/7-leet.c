@@ -8,7 +8,7 @@ char *leet(char *str)
 {
 	int i, j;
 
-	char lett[10] = {'a', 'A', 'e', 'E', 'o', 'E', 't', 'T', 'l', 'L'};
+	char lett[10] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 	char num[10] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
 
 	for (i = 0; str[i] != '\0'; i++)
