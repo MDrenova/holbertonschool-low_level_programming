@@ -1,7 +1,7 @@
 /**
- * _memset - functions to set n bytes with a charachter
- * @s: pointer to string
- * @b: character to fill
+ * _memcpy - functions to set n bytes with a charachter
+ * @dest: pointer to string
+ * @src: character to fill
  * @n: n-th byt to fill
  * Return: string
  */
