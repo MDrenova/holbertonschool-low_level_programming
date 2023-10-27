@@ -2,12 +2,14 @@
 
 /**
  * print_diagsums - Print sum od diagonals
- * @size:  
+ * @size: size of matrix / array
+ * @a: pointer to array / matrix
  */
 
 void print_diagsums(int *a, int size)
 {
 	int i, sum, sum1;
+
 	sum = 0;
 	sum1 = 0;
 
