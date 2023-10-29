@@ -12,7 +12,7 @@ int main(void)
 	nr_s = 1;
 	nr_fib = nr + nr_s;
 	printf("%ld, ", nr_fib);
-	for (i = 0; i < 50; i++)
+	for (i = 1; i < 50; i++)
 	{
 		nr = nr_s;
 		nr_s = nr_fib;
