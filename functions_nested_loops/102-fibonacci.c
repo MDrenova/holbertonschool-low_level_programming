@@ -18,7 +18,7 @@ int main(void)
 		nr_s = nr_fib;
 		nr_fib = nr + nr_s;
 		printf("%ld", nr_fib);
-		if(i != 49)
+		if (i != 49)
 			printf(", ");
 	}
 	printf("\n");
