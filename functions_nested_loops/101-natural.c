@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int i, j, sum, sum1;
+	int i, sum, sum1;
 
 	sum = 0;
 	sum1 = 0;
