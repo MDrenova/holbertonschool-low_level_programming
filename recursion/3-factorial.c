@@ -2,7 +2,7 @@
 /**
  * factorial - function to calculate fact!
  *
- * @n: factorial num 
+ * @n: factorial num
  *
  * Return: 1 for 0 value, faktorial number if n > 0 and -1 for negative input
  */
