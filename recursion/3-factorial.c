@@ -1,10 +1,10 @@
 #include "main.h"
 /**
- * _strlen_recursion - function to return length of string
+ * factorial - function to calculate fact!
  *
- * @s: string pointer
+ * @n: factorial num 
  *
- * Return: 1 for 0 value, faktorial number if n > 0 and -1 for negative input; 
+ * Return: 1 for 0 value, faktorial number if n > 0 and -1 for negative input
  */
 int factorial(int n)
 {
