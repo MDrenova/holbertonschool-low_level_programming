@@ -12,7 +12,7 @@ int f_palindrome(char *s, int start, int end)
 		return (1);
 	if (s[start] != s[end])
 		return (0);
-	return (f_palindrome(s, start + 1, end + 1));
+	return (f_palindrome(s, start + 1, end - 1));
 }
 /**
  * is_palindrome - call palindrome func to check if a word is or not palindrome
