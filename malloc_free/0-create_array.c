@@ -3,9 +3,10 @@
  * create_array - function to create an arry
  * @size: sie of array
  * @c: character
+ * Return: null or a pointer to s
  */
 
-char *create_array(usigned int size, char c)
+char *create_array(unsigned int size, char c)
 {
 	int i;
 
@@ -15,7 +16,7 @@ char *create_array(usigned int size, char c)
 		return (NULL);
 	if (s == 0)
 		return (NULL);
-	for(i = 0; i < size; i++)
+	for (i = 0; i < size; i++)
 		s[i] = c;
-	return s;
+	return (s);
 }
