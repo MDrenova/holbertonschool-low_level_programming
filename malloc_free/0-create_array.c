@@ -1,0 +1,21 @@
+#include <stdlib.h>
+/**
+ * create_array - function to create an arry
+ * @size: sie of array
+ * @c: character
+ */
+
+char *create_array(usigned int size, char c)
+{
+	int i;
+
+	char *s = malloc(sizeof(size) * 98);
+
+	if (size == 0)
+		return (NULL);
+	if (s == 0)
+		return (NULL);
+	for(i = 0; i < size; i++)
+		s[i] = c;
+	return s;
+}
