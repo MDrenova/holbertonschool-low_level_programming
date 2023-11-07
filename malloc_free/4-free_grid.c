@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * free-grid - function to allocate matrix
+ * free_grid - function to allocate matrix
  * @grid: matrix
  * @height: height
  */
