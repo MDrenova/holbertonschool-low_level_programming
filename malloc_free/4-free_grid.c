@@ -1,10 +1,9 @@
 #include <stdlib.h>
 #include <string.h>
 /**
- * alloc_grid - function to allocate matrix
- * @width: columns
+ * free-grid - function to allocate matrix
+ * @grid: matrix
  * @height: height
- * Return: null or a pointer to matrix
  */
 void free_grid(int **grid, int height)
 {
