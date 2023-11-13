@@ -5,6 +5,7 @@
 /**
  * print_dog - function to initialize struct
  * @d: struct name
+ * printf("Name: %s\n", (d->name != NULL) ? d->name : "(nil)")
  */
 
 void print_dog(struct dog *d)
@@ -15,7 +16,7 @@ void print_dog(struct dog *d)
 			printf("Name: (nil)\n");
 		else
 			printf("Name: %s\n", d->name);
-		if (d->age == 1E_15)
+		if (d->age)
 			printf("Age: (nil)\n");
 		else
 			printf("Age: %f\n", d->age);
