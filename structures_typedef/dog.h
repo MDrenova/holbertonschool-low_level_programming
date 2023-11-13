@@ -1,8 +1,11 @@
 /**
  * struct dog - struct to save name, age, owner
+ *
  * @name: name of a dog
  * @age: age of the dog
  * @owner: owner of dog
+ *
+ * Description: Save data for a dog
  */
 
 #ifndef DOG_STRUCT_H
