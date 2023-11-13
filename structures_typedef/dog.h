@@ -1,3 +1,6 @@
+#ifndef DOG_H
+#define DOG_H
+
 /**
  * struct dog - struct to save name, age, owner
  *
@@ -7,10 +10,6 @@
  *
  * Description: Save data for a dog
  */
-
-#ifndef DOG_STRUCT_H
-#define DOG_STRUCT_H
-
 struct dog
 {
 	char *name;
