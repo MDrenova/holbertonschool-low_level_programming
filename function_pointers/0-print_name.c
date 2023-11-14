@@ -1,5 +1,5 @@
 /**
- * print-name - functio to print the name
+ * print_name - functio to print the name
  * @name: name para string
  * @f: function pointer
  */
