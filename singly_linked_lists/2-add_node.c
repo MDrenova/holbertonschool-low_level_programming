@@ -20,13 +20,13 @@ list_t *add_node(list_t **head, const char *str)
 	new_node->str = strdup(str);
 	if (!new_node)
 	{
-		free(new_mode);
+		free(new_node);
 		return (NULL);
 	}
 
-	new_mode->len = len;
+	new_node->len = len;
 	new_node->next = *head;
-	*head = new_mode;
+	*head = new_node;
 
 	return (new_node);
 }
