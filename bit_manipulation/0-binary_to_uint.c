@@ -13,8 +13,10 @@ unsigned int binary_to_uint(const char *b)
 	int len = strlen(b), i;
 
 	if (!b)
+	{
 		printf("0\n");
 		return (0);
+	}
 
 	for (i = len - 1; i >= 0; i--)
 	{
