@@ -1,3 +1,4 @@
+#include <stdarg.h>
 #include "main.h"
 /**
  * cp - copy file to another file
@@ -42,8 +43,6 @@ void cp(char *file_from, char *file_to)
 	}
 
 	close_file(file_dest, file_src);
-
-	return (0);
 }
 /**
  * close_file - function to close file if any error return message
