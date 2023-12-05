@@ -76,10 +76,6 @@ void cp(char *file_from, char*file_to)
  */
 int main(int argc, char *argv[])
 {
-	int fd_from, fd_to;
-	ssize_t read_count, write_count;
-	char buffer[BUFFER_SIZE];
-
 	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
