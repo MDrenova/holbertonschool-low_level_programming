@@ -24,8 +24,8 @@ int create_file(const char *filename, char *text_content)
 		while (text_content[text_length])
 			text_length++;
 
-		write_count = write(fd, text_content, text_length);
-		if (write_cout == -1)
+		write_count = write(file_desc, text_content, text_length);
+		if (write_count == -1)
 		{
 			close(file_desc);
 			return (-1);
