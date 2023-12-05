@@ -59,6 +59,13 @@ int main(int argc, char *argv[])
 	while ((read_count = read(fd_from, buffer, BUFFER_SIZE)) > 0)
 	{
 		write_count = write(fd_to, buffer, read_count);
+		if (write_count == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			close_file(fd_from);
+			close_file(fd_to);
+			exit(99);
+		}
 	}
 	if (read_count == -1)
 	{
