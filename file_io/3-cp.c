@@ -7,6 +7,7 @@
  */
 void cp(char *file_from, char *file_to)
 {
+	char * file_src, file_dest;
 	int file_src, file_dest;
 	ssize_t read_count, write_count;
 	char content[1024];
