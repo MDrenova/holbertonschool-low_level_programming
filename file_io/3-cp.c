@@ -7,7 +7,7 @@
 void cp(char *file_from, char *file_to)
 {
 	int file_src, file_dest;
-	ssize_t read_cout, write_count;
+	ssize_t read_count, write_count;
 	char content[1024];
 
 	file_src = open(file_from, O_RDONLY);
@@ -22,10 +22,10 @@ void cp(char *file_from, char *file_to)
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 		exit(99);
 	}
-	while ((read_src = read(file_src, content, 1024)) > 0)
+	while ((read_count = read(file_src, content, 1024)) > 0)
 	{
-		write_dest = (file_dest, content, read_src);
-		if (write_dest == -1)
+		write_count = (file_dest, content, read_count);
+		if (write_count == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
 			close(file_src);
