@@ -36,7 +36,7 @@ void cp(char *file_from, char *file_to)
 	}
 	if (read_count == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_form);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		close(file_src);
 		close(file_dest);
 		exit(98);
@@ -49,7 +49,7 @@ void cp(char *file_from, char *file_to)
  * @file_src: file descrtiptor source
  * @file_dest: file destination descriptor
  */
-void close_file(char *file_src, char *file_dest)
+void close_file(int file_src, int file_dest)
 {
 	if (close(file_src) == -1)
 	{
