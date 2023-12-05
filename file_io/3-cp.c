@@ -26,9 +26,10 @@ void close_file(int fd1, int fd2)
 }
 /**
  * cp - copy file to another
- * @filefrom
+ * @file_from: file that will be copied
+ * @file_to: file where will be saved the copy
  */
-void cp(char *file_from, char*file_to)
+void cp(char *file_from, char *file_to)
 {
 	int fd_from, fd_to;
 	ssize_t read_count, write_count;
