@@ -58,19 +58,25 @@ int main(int argc, char *argv[])
 		close(fd_to);
 		exit(98);
 	}
-
-	if (close(fd_from) == -1)
+	close_file(fd_from, fd_to);
+	return (0);
+}
+/**
+ * close_file - close file
+ * @fd1: file form
+ * @fd2: file to
+ */
+void close_file(int fd1, int fd2)
+{
+	if (close(fd1) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_from);
 		exit(100);
 	}
 
-	if (close(fd_to) == -1)
+	if (close(fd2) == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_to);
 		exit(100);
 	}
-
-	return (0);
 }
-
