@@ -34,7 +34,7 @@ void close_file(int fd1, int fd2)
 int main(int argc, char *argv[])
 {
 	int fd_from, fd_to;
-	ssize_t read_count, write_count;
+	ssize_t read_count, write_count; 
 	char buffer[BUFFER_SIZE];
 
 	if (argc != 3)
@@ -49,7 +49,6 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-
 	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	if (fd_to == -1)
 	{
