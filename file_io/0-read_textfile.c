@@ -27,7 +27,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	write_count = write(STDOUT_FILENO, counter, read_count);
+	write_count = write(STDOUT_FILENO, content, read_count);
 	if (write_count == -1 || write_count != read_count)
 	{
 		free(content);
