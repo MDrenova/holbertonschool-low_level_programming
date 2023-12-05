@@ -7,7 +7,7 @@
  */
 void cp(char *file_from, char *file_to)
 {
-	char * file_src, file_dest;
+	char * file_src_name, file_dest_name;
 	int file_src, file_dest;
 	ssize_t read_count, write_count;
 	char content[1024];
@@ -15,13 +15,13 @@ void cp(char *file_from, char *file_to)
 	file_src = open(file_from, O_RDONLY);
 	if (file_src == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_src);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_src_name);
 		exit(98);
 	}
 	file_dest = open(file_from, O_WRONLY | O_CREAT | O_TRUNC | 0664);
 	if (file_dest == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_dest);
+		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_dest_name);
 		exit(99);
 	}
 	while ((read_count = read(file_src, content, 1024)) > 0)
@@ -29,7 +29,7 @@ void cp(char *file_from, char *file_to)
 		write_count = (file_dest, content, read_count);
 		if (write_count == -1)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_dest);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_dest_name);
 			close(file_src);
 			close(file_dest);
 			exit(99);
@@ -37,7 +37,7 @@ void cp(char *file_from, char *file_to)
 	}
 	if (read_count == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_src);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_src_name);
 		close(file_src);
 		close(file_dest);
 		exit(98);
